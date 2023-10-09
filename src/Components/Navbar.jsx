@@ -75,7 +75,7 @@ export default function Navbar(props) {
               </li>
               <li className="nav-item">
                 <a className="nav-link active" href="/">
-                  SUITABLE FOR
+                  SUITABLE FOR.
                 </a>
               </li>
               <li className="nav-item">
@@ -112,10 +112,10 @@ export default function Navbar(props) {
         size="xl"
         style={{ display: "block", paddingRight: 6 }}
       >
-       
+
         <Modal.Body>
           <button className={style['close-button']} onClick={closeModal}>
-            &times; 
+            &times;
           </button>
           <Row>
             <div className="col-lg-4">
@@ -198,7 +198,7 @@ export default function Navbar(props) {
                       {/* Down arrow character */}
                     </div>
                     {formik.touched.requirements &&
-                    formik.errors.requirements ? (
+                      formik.errors.requirements ? (
                       <div className="error" style={{ color: "red" }}>
                         {formik.errors.requirements}
                       </div>
@@ -207,8 +207,8 @@ export default function Navbar(props) {
                 </div>
                 <div className="col-lg-12 mt-5">
                   <textarea
-                      className={`${style.infoPlaceholder} form-control`}
-                      name="message"
+                    className={`${style.infoPlaceholder} form-control`}
+                    name="message"
                     placeholder="Enter Your Message"
                     type="text"
                     value={formik.values.message}
