@@ -2,7 +2,17 @@ import React from 'react'
 
 const coreservice = () => {
     return (
-        <div>coreservice</div>
+        <div>
+            <div>coreservice</div>            <div>coreservice</div>
+            <div>coreservice</div>
+            <div>coreservice</div>
+            <div>coreservice</div>
+            <div>coreservice</div>
+            <div>coreservice</div>
+            <div>coreservice</div>
+            <div>coreservice</div>
+
+            </div>
     )
 }
 
