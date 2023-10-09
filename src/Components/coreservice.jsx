@@ -6,4 +6,4 @@ const coreservice = () => {
     )
 }
 
-export default coreservice
+export default coreservice0
