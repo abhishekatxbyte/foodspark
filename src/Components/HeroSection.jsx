@@ -2,7 +2,23 @@ import React from 'react'
 
 const HeroSection = () => {
     return (
-        <div>HeroSection</div>
+        <div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+            <div>HeroSection 1</div>
+        </div>
     )
 }
 
