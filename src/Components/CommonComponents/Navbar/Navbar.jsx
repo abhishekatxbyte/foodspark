@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
-import BrandImg from "./../images/logo-white.png";
-import PopupImg from "./../images/popup-bg.png";
+import BrandWhiteImg from "./../../../assets/images/BrandWhiteImg.png";
+import PopupImg from "./../../../assets/images/PopupImg.png";
+
+
 import { Modal, Button, Row, Col } from "react-bootstrap";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -53,7 +55,7 @@ export default function Navbar(props) {
           <nav className="navbar">
             <div className="container-fluid">
               <a className="navbar-brand" href="/">
-                <img className={style.logo} src={BrandImg} />
+                <img className={style.logo} src={BrandWhiteImg} />
                 {/* <img className={style.logo} src={BrandImg}/> */}
               </a>
             </div>

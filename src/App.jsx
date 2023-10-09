@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Components/Navbar';
+import HomePageComponent from './Components/HomePageComponent';
 
 
 function App() {
 
   return (
     <>
-     <Navbar/>
+  <HomePageComponent/>
     </>
   )
 }
