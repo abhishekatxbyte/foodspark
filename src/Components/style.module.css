@@ -1,0 +1,66 @@
+.requestaquote {
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #396afc;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo {
+  mix-blend-mode: hard-light;
+}
+
+.PopupGetafreeCodeButton {
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #012bb4;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: #000000;
+}
+
+.infoPlaceholder {
+  font-weight: 700;
+  color: #000000;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select {
+  appearance: none; 
+  background: transparent;
+  padding-right: 185px; 
+  width: 100%; 
+}
+
+.dropdown-arrow {
+  position: absolute;
+  top: 50%; 
+  right: 10px; 
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+.close-button {
+  position: absolute;
+  color: #6c757d;
+  font-weight: 280;
+  top: -30px; 
+  right: 12px; 
+  background: none;
+  border: none;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #ff0000; 
+}
+
