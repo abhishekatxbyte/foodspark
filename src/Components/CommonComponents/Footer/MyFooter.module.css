@@ -1,0 +1,116 @@
+.mainFooter {
+  /* max-width: 100% !important;
+  width: 100% !important;
+  padding-inline-start: 11%;
+  padding-inline-end: 11%; */
+
+  padding-top: 120px;
+  background-color: #fff;
+}
+
+.brandLogoImg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.brandLogoImgpara {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.socialIcon {
+  margin-top: 30px;
+}
+
+.foodShopImg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 6px;
+  vertical-align: middle;
+  border-style: none;
+  
+}
+
+.headTitle {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #23242a;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  margin-left: 23px;
+}
+
+.contactusUl {
+  list-style: none;
+}
+
+.contactusLi {
+  padding: 0 0 15px;
+  color: #111213;
+  display: flex;
+}
+
+.contactusSpan1 {
+  color: #23242a;
+  position: relative;
+  top: 5px;
+}
+
+.contactuspara {
+  color: #23242a;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  line-height: 25px;
+}
+
+.contactusSpan2 {
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.endFooter {
+  border-top: 1px solid #23242a21;
+  margin-top: 70px;
+  padding: 35px 0;
+}
+
+.endFooterLi {
+  display: inline-block;
+}
+
+.endFooterUl {
+    text-align: right;
+
+}
+
+.endFooterA {
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    display: inline-block;
+    padding: 3px 0;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #23242a;
+}
+
+.desclaimerImg {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 1150px) {
+}
+
+@media only screen and (max-width: 1150px) {
+}

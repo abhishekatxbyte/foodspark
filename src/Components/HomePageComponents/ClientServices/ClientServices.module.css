@@ -1,0 +1,151 @@
+.Requestaquote {
+  border: 2px solid #dce5ff;
+  color: #2948ff;
+  padding: 0 32px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 15px 0 rgba(3, 35, 68, 0.1);
+  box-shadow: 0 10px 15px 0 rgba(3, 35, 68, 0.1);
+  line-height: 52px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.restoDetails {
+  max-width: 50%;
+}
+
+.h2 {
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.restroDetailspara {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.h3 {
+  font-size: 34px;
+  line-height: 46px;
+  font-family: Poppins, sans-serif;
+  color: #23242a;
+  font-weight: 600;
+}
+
+.rows {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.card {
+  line-height: 26px;
+  /* padding: 30px;   i'll change */
+  padding: 31px;
+  border-radius: 8px 8px 8px 40px;
+  margin-top: 30px;
+
+  position: relative;
+  text-align: center;
+  box-shadow: 0 11px 20px rgb(123 149 162 / 15%);
+}
+
+.img1 {
+  background: #d6e1ff;
+  border-bottom: 4px solid #3168ff;
+}
+
+.img2 {
+  background: #ffeee5;
+  border-bottom: 4px solid #ffb085;
+}
+
+.img3 {
+  background: #eef9ff;
+  border-bottom: 4px solid #009fff;
+}
+
+.img4 {
+  background: #ffefeb;
+  border-bottom: 4px solid #fc4a1a;
+}
+
+.img5 {
+  background: #f8f1ff;
+  border-bottom: 4px solid #7f00ff;
+}
+
+.img6 {
+  background: #d6e1ff;
+  border-bottom: 4px solid #3168ff;
+}
+
+.serviceCounter {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 30px;
+  color: #050748;
+  padding: 15px 0;
+}
+
+.profilepara {
+  font-weight: 600;
+  color: #6a6a8e;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.profileimg {
+  width: 65px;
+  margin: 0 auto 15px;
+  display: block;
+  border-style: none;
+}
+
+.mainClintserv {
+  padding-top: 20px;
+  /* max-width: 100% !important;
+  width: 100% !important;
+  padding-inline-start: 11%;
+  padding-inline-end: 11%; */
+}
+
+.clientImg {
+  width: 186.667px;
+  margin-right: 10px;
+
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .restoDetails {
+    max-width: 100% !important;
+  }
+  .mainClintserv {
+    /* max-width: 100% !important;
+    width: 100% !important;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%; */
+
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-family: Poppins, sans-serif;
+    color: #23242a;
+    font-weight: 600;
+  }
+}

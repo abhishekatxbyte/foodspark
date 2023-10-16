@@ -1,0 +1,107 @@
+.MainSec {
+  background: linear-gradient(to bottom, #fbf9ed 0, #fbeaf8 100%);
+  /* position:absolute; */
+  height: 100%;
+  position: relative;
+  z-index: 1;
+
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-inline-start: 14%;
+  padding-inline-end: 14%;
+  background-color: #fff;
+}
+
+.PadTb {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.Container {
+  max-width: 1200px;
+}
+
+.HeadRow {
+  justify-content: center !important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.CommonHead {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.Row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.Mt30 {
+  margin-top: 30px;
+}
+
+.IndustryWorkFor {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  height: 100% !important;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+
+  transition: transform 1s ease;
+  transform: translateY(0);
+}
+
+.IndustryWorkFor:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.IndustryWorkForImg {
+  width: 55px;
+  max-width: 100%;
+  height: auto;
+}
+
+.IndustryWorkh6 {
+  margin: 0 0 0 15px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: Poppins, sans-serif;
+  color: #23242a;
+  font-weight: 600;
+}
+
+.IndustryWorkpara {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+
+  line-height: 28px;
+}
+
+.CommonHeadh2 {
+  margin-bottom: 15px;
+
+  font-size: 40px;
+  line-height: 52px;
+  font-family: Poppins, sans-serif;
+  color: #23242a;
+  font-weight: 600;
+}
+
+.CommonHeadpara {
+  font-size: 16px;
+  line-height: 28px;
+}

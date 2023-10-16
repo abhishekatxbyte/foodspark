@@ -1,0 +1,18 @@
+.HomePageSec {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-inline-start: 14%;
+  padding-inline-end: 14%;
+  background-color: #fff;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .HomePageSec {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+  }
+} */
+
+

@@ -2,13 +2,21 @@ import React, { useState } from "react";
 import style from "./style.module.css";
 import BrandWhiteImg from "./../../../assets/images/BrandWhiteImg.png";
 import PopupImg from "./../../../assets/images/PopupImg.png";
-
-
-import { Modal, Button, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import {
+  Modal,
+  Button,
+  Row,
+  Col,
+  NavDropdown,
+  Nav,
+  Navbar,
+} from "react-bootstrap";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-export default function Navbar(props) {
+export default function MyNavbar(props) {
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const validationSchema = Yup.object({
@@ -44,79 +52,65 @@ export default function Navbar(props) {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+ 
+  const handleClick = (id) => {
+    navigate('/zomatoapi/id', {replace: true});
+  };
 
   return (
     <div>
-      <nav
-        className="navbar navbar-expand-lg navbar-dark bg-primary "
-        style={{ height: 70 }}
-      >
-        <div className="container-fluid custom-navbar">
-          <nav className="navbar">
-            <div className="container-fluid">
-              <a className="navbar-brand" href="/">
-                <img className={style.logo} src={BrandWhiteImg} />
-                {/* <img className={style.logo} src={BrandImg}/> */}
-              </a>
-            </div>
-          </nav>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  HOME
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/">
-                  API
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/">
-                  SUITABLE FOR.
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/">
-                  TOP FOOD APP{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/">
-                  COMPANY{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/">
-                  BLOG{" "}
-                </a>
-              </li>
-              <li className="nav-item">
-                <button
-                  className={`${style.requestaquote} nav-link active`}
-                  href="/"
-                  onClick={openModal}
-                >
-                  Request A Quate{" "}
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>{" "}
+      <Navbar expand="lg" bg="primary" variant="dark" className="p-0">
+        <Navbar.Brand to="#homepage">
+          <img className={style.logo} src={BrandWhiteImg} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav className="mr-auto">
+            <Nav.Link className={`${style.links}`}>HOME</Nav.Link>
+            <NavDropdown title="API" id="basic-nav-dropdown" className={`${style.links}`}>
+              <NavDropdown.Item >
+                <Button onClick={handleClick}>
+                  Zomato API
+                </Button>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link className={`${style.links}`} to="#suitablefor">
+              SUITABLE FOR
+            </Nav.Link>
+            <Nav.Link className={`${style.links}`} to="#topfoodapp">
+              TOP FOOD APP
+            </Nav.Link>
+            <Nav.Link className={`${style.links}`} to="#company">
+              COMPANY
+            </Nav.Link>
+            <Nav.Link className={`${style.links}`} to="#blog">
+              BLOG
+            </Nav.Link>
+            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item to="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item to="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item to="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item to="#action/3.4">
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown> */}
+          </Nav>
+          <button className={`${style.requestaquote} me-2`} onClick={openModal}>
+            <span>Request A Quote</span>
+          </button>
+        </Navbar.Collapse>
+      </Navbar>
       <Modal
         show={isModalOpen}
         onHide={closeModal}
         size="xl"
         style={{ display: "block", paddingRight: 6 }}
       >
-
         <Modal.Body>
-          <button className={style['close-button']} onClick={closeModal}>
+          <button className={style["close-button"]} onClick={closeModal}>
             &times;
           </button>
           <Row>
@@ -200,7 +194,7 @@ export default function Navbar(props) {
                       {/* Down arrow character */}
                     </div>
                     {formik.touched.requirements &&
-                      formik.errors.requirements ? (
+                    formik.errors.requirements ? (
                       <div className="error" style={{ color: "red" }}>
                         {formik.errors.requirements}
                       </div>

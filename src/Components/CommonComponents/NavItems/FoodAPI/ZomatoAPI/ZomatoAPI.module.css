@@ -1,0 +1,113 @@
+.h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 45px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+
+.p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.ZoLogoImg {
+  width: 100%;
+  max-width: 150px;
+  border: 10px solid #fff;
+  height: auto;
+  vertical-align: middle;
+}
+
+.zomatoSec1 {
+  /* background-color: #cb202d; */
+  /* margin-top: 80px; */
+  padding: 60px 0 60px 0;
+}
+
+.zomatoSec2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.h3 {
+  font-size: 34px;
+  line-height: 46px;
+  font-family: Poppins, sans-serif;
+  color: #23242a;
+  font-weight: 600;
+}
+
+.crawlerlistLi {
+  background-image: url(../../../../../assets/images/ZomatoAPIImg/arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 0 0 0 30px;
+  vertical-align: middle;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.crawlerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 90px 0;
+}
+
+.crawlerFlexre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 90px 0;
+  flex-direction: row-reverse;
+}
+
+.crawlerFlexh2 {
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  font-family: Poppins, sans-serif;
+  color: #23242a;
+  font-weight: 600;
+}
+
+.crawlerFlexpara {
+  font-size: 17px;
+  line-height: 28px;
+}
+
+
+ 
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    .gfg-div {
+        background-color: #63c971;
+        color: #fff;
+    }
+}
+ 
+
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) 
+    and (orientation: landscape) {
+       
+}
+
+ @media only screen and (max-width: 600px) {
+    .crawlerFlex {
+        justify-content: space-between;
+        margin: 90px 0;
+        
+      }
+      
+      .crawlerFlexre {
+        justify-content: space-between;
+        margin: 90px 0;
+      }
+} 
+ 
+
