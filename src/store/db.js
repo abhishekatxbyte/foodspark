@@ -414,7 +414,14 @@
     ],
     "data2":[
         {
-            
+            "id":1,
+            "HeroImg" : "" ,
+            "HeroHead" : "Ifood Restaurant Data Scraping To Get Structured Restaurant Data Extraction" , 
+            "HeroData" : "Use our Ifood restaurant data scraping services to get clear restaurant data like locations, reviews, mentions, menus, etc. without any technical issues. Tell us your requirements and our team will provide you the required data." ,
+            "WebScraping": "Globally, millions of people are using Ifood daily to find out a place to eat. Ifood can help you decide where to get food from doesn’t matter you are at which place. A lot of food lovers share their photos online while eating food and post reviews therefore, you want everything to use the alternatives. Do you want food databases of high quality?\nWith our high-quality Ifood restaurant data feeds, it’s easy to get access to well-structured Ifood restaurant data from multiple websites online so that you can scale up your project. Foodspark Data Extraction aids a complete list of metadata as well as we have the QA procedure perfected for 10+ years of experience to provide high-quality Ifood restaurant data scraping.",
+            "ListofdatafieldHead" : "Foodspark is the best Ifood restaurant data scraping company. We always offer unique, real-time, and customized data as per your business requirements. We offer updated and unique data you can depend on. Here are the data fields we can scrape:",
+            "ListofdatafieldImg" : "" ,
+            "Listofdatafield" : ""
         }
     ]
    }
