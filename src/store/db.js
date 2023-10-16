@@ -8,7 +8,7 @@
             "HeroImg": "./assets/images/ZomatoAPIImg/Zomato_logo.png",
             "HeroData": "Zomato restaurant listing API will extract and download the data from Zomato, including restaurant details, reviews, ratings, etc., in the required format, such as CSV, Excel, etc.",
             "EfficientApisHeader": "Most Efficient Zomato APIs",
-            "EfficientApisHeader": [
+            "EfficientApisContent": [
                 "Scrape Zomato restaurant and food menu data without any limits",
                 "Extract past data from users’ profiles",
                 "Built-in data filters to get updates easily",
