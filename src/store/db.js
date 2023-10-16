@@ -1,5 +1,5 @@
 
-   {
+   const data = {
     "data1":[
         {
             "id": 1,
@@ -418,3 +418,4 @@
         }
     ]
    }
+export default data

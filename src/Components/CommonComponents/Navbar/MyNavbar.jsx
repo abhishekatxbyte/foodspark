@@ -14,9 +14,12 @@ import {
 } from "react-bootstrap";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { useSelector } from 'react-redux'
 
-export default function MyNavbar(props) {
+export default function MyNavbar() {
   const navigate = useNavigate();
+  const apiDataArray = useSelector(state => state.data.apiDataArray)
+  console.log(apiDataArray)
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const validationSchema = Yup.object({
@@ -53,8 +56,16 @@ export default function MyNavbar(props) {
     setIsModalOpen(false);
   };
  
-  const handleClick = (id) => {
-    navigate('/zomatoapi/id', {replace: true});
+  const handleClick = (data) => {
+    function formatString(inputString) {
+      // Remove spaces and make the string lowercase
+      return inputString.replace(/\s/g, '').toLowerCase();
+    }
+    
+    // Example usage: 
+    const inputString =data.title;
+    const formattedString = formatString(inputString);
+    navigate(`/api/${formattedString}/${data.id}`, {replace: true});
   };
 
   return (
@@ -69,9 +80,14 @@ export default function MyNavbar(props) {
             <Nav.Link className={`${style.links}`}>HOME</Nav.Link>
             <NavDropdown title="API" id="basic-nav-dropdown" className={`${style.links}`}>
               <NavDropdown.Item >
-                <Button onClick={handleClick}>
-                  Zomato API
+             <div style={{display:'flex',flexDirection:'column',gap:'1em'}}>
+             {apiDataArray.map((data)=>{
+                  return <Button key={data.id} onClick={()=>handleClick(data)}>
+                  {data.title}
                 </Button>
+                })}
+             </div>
+               
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className={`${style.links}`} to="#suitablefor">

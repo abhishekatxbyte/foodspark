@@ -11,7 +11,7 @@ function AppRoutes() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>} />
-      <Route path="/api/:id" element={<FoodApiComponent/>} />
+      <Route path="/api/:id1/:id2" element={<FoodApiComponent/>} />
     </Routes>
   </BrowserRouter>
   )
